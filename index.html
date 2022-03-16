@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Mattz Indonesia</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <a href="#">
+            <img class="logo" src="logo-mattz.png">
+          </a>
+        </div>
+        <div class="header-right">
+          <a class="signup" href="#" style="text-decoration: none">SIGN UP</a>
+          <a class="about" href="#" style="text-decoration: none">ABOUT</a>
+          <a class="contact" href="#" style="text-decoration: none">CONTACT</a>
+          <a href="#">
+            <i class="fa fa-search search"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <div class="top-left">
+          <h1>Our Product</h1>
+          <h2>ANTIQUES AND LUXURIOUS</h2>
+          <span class="btn inspiration">Inspiration</span>
+        </div>
+        <div class="top-rigth">
+          <div class="products">
+            <div class="product">
+              <img src="product1.jpg" style="height: 250px; width: 100%; border-radius: 10px">
+            </div>
+            <div class="product">
+              <img src="product2.jpg" style="height: 250px; width: 100%; border-radius: 10px">
+            </div>
+            <div class="product">
+              <img src="product3.jpg" style="height: 250px; width: 100%; border-radius: 10px">
+            </div>
+            <div class="product">
+              <img src="product4.jpg" style="height: 250px; width: 100%; border-radius: 10px">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="about-wrapper">
+      <div class="container">
+        <div class="about-left">
+          <h1>About Mattz</h1>
+          <p>Mattz is an interior wholesaler of antiques and reproduction with a touch of Asia. All furniture and accessories are hand selected and from all over the world carefully brought to Mattz for you. Be amazed in the showroom and take, thanks to the cash & carry concept, the items you are in love with immediately along. Each item is different, many products are handmade, so you’ll always find something unique.</p>
+          <span class="btn read-more">Read More</span>
+        </div>
+        <div class="about-right">
+          <img class="img-about" src="about_img.jpg" style="border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+    <div class="customer-wrapper">
+      <div class="container">
+        <div class="contents">
+          <h1 class="section-title">Become a customer</h1>
+          <div class="contents-item">
+            <i class="fa fa-user"></i>
+            <h3>Become a customer?</h3>
+            <p>Do you have an interior shop, gift shop or flower shop? Or another shop where Mattz fits in perfectly?</p>
+          </div>
+          <div class="contents-item">
+            <i class="fa fa-sign-in"></i>
+            <h3>Sign up</h3>
+            <p>Then register as a customer and we will assess your application. You will hear more within two working days.</p>
+          </div>
+          <div class="contents-item">
+            <i class="fa fa-shopping-bag"></i>
+            <h3>Shop</h3>
+            <p>Do all your shopping in our webshop or showroom in Barneveld, directly along the highway A30.</p>
+          </div>
+          <div class="contents-item">
+            <i class="fa fa-money"></i>
+            <h3>Cash & Carry</h3>
+            <p>Take your purchases, bought in the showroom, with you immediately. Or pick up your webshop order in Barneveld.</p>
+          </div>
+          <span class="btn sign-up">Sign Up</span>
+        </div>
+      </div>
+
+    </div>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      // fungsi initialize untuk mempersiapkan peta
+      function initialize() {
+        var propertiPeta = {
+            center:new google.maps.LatLng(-6.882771, 107.604551),
+            zoom:9,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        
+        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        // membuat Marker
+        var marker=new google.maps.Marker({
+        position: new google.maps.LatLng(-6.882771, 107.604551),
+        map: peta
+        });
+      }
+
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+      
+      
+      
+    <footer>
+      <div class="footer-contents">
+        <div class="footer-item footer-logo">
+          <img class="logo" src="logo-mattz.png" href="#">
+        </div>
+        <div class="footer-item">
+          <h3>Address</h3>
+          <p>Ciumbuleuit Street Number 13 Slash 155C Bandung City, West Java, Indonesia</p>
+          <p>Opening Hour: Monday until Friday 08:00 - 16:00</p>
+        </div>
+        <div class="footer-item">
+          <h3>About Us</h3>
+          <a href="#" style="text-decoration: none; color: white;">Organization</a><p></p>
+          <a href="#" style="text-decoration: none; color: white;">Shipment</a><p></p>
+          <a href="#" style="text-decoration: none; color: white;">Feed Back</a>
+        </div>
+        <div class="footer-item">
+          <h3>Career & Partnership</h3>
+          <a href="#" style="text-decoration: none; color: white;">Join with us</a><p></p>
+          <a href="#" style="text-decoration: none; color: white;">Partnership with us</a>
+        </div>
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <p>gmail@mattz.com</p>
+          <p>0821221212</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

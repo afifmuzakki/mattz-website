@@ -1,0 +1,15 @@
+/* Untuk Tablet */
+@media all and (max-width: 1166px) {
+    .about-right{
+        float: right;
+        width: 400px;
+        height: 250px;
+        padding: 50px;
+        padding-top: 100px;
+        /* width: 50%; */
+      }
+    }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+  }
